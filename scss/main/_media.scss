@@ -1,0 +1,102 @@
+@media (max-width: 1650px) {
+    .header {
+        height: 900px;
+    }
+    .form {
+        &_submit {
+            gap: 50px;
+            grid-template-columns: 1fr 1fr;
+        }
+        &_title_h2 {
+            font-size: 60px;
+            line-height: 100%;
+        }
+    }
+
+}   
+
+@media (max-width: 1000px) {
+    .header {
+        &_h1 {
+            font-size: 60px;
+        }
+        &_wrapper {
+            padding: 0 0 268px 100px;
+        }
+    }
+    .form {
+        padding: 50px;
+        &_title {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 30px;
+            &_descr {
+                text-align: left;
+            }
+        }
+        &_inputs {
+            margin-top: 40px;
+            &_main {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+        &_submit {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        background-image: url("/img/bg/mob_bg.png");
+        height: 980px;
+        &_wrapper {
+            width: 100%;
+            padding: 0 24px 312px 24px;
+        }
+        &_h1 {
+            font-size: 32px;
+        }
+        &_button {
+            margin-top: 44px;
+            width: 100%;
+            padding: 20px;
+        }
+    }
+    .form {
+        margin-top: -241px;
+        padding: 0;
+        &_container {
+            border-radius: 40px;
+            padding: 32px 24px;
+        }
+        &_title {
+            gap: 12px;
+            &_h2 {
+                font-size: 28px;
+                width: 60%;
+            }
+            &_descr {
+                font-size: 18px;
+            }
+        }
+        &_inputs {
+            &_main {
+                gap: 12px;
+                &_item {
+                    font-size: 20px;
+                }
+            }
+            &_sup {
+                margin-top: 12px;
+            }
+        }
+        &_submit {
+            gap: 40px;
+            &_politics_text {
+                font-size: 20px;
+            }
+        }
+    }
+}

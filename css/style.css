@@ -40,3 +40,318 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.header {
+  height: 1083px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url("/img/bg/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header_wrapper {
+  padding: 0 0 268px 148px;
+}
+.header_h1 {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110%;
+  color: #fff;
+}
+.header_button {
+  margin-top: 49px;
+  display: inline-block;
+  border-radius: 60px;
+  padding: 20px 187px 20px 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 109%;
+  text-align: left;
+  color: #1C1C1C;
+  position: relative;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header_button::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: #252525;
+  top: calc(50% + 1px);
+  right: 28px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.header_button::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: #252525;
+  top: 50%;
+  right: 28px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.header_button:hover {
+  background: #DCEAF3;
+}
+.header_button:active {
+  background: #34FFF1;
+}
+
+.form {
+  margin-top: -173px;
+  margin-bottom: 114px;
+  border-radius: 60px 60px 0 0;
+  background: #fff;
+  padding: 140px 94px;
+}
+.form_container {
+  border-radius: 60px;
+  padding: 80px;
+  background: #3388BB;
+}
+.form_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.form_title_h2 {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 50%;
+  color: #fff;
+}
+.form_title_descr {
+  font-style: italic;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  font-size: 24px;
+  text-align: right;
+  color: #D1E8F7;
+}
+.form_inputs {
+  margin-top: 80px;
+}
+.form_inputs_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.form_inputs_main_item {
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  border: none;
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 24px 20px;
+  background: #50A1D2;
+  color: #D1E8F7;
+}
+.form_inputs_main_item::-webkit-input-placeholder {
+  color: #D1E8F7;
+}
+.form_inputs_main_item::-moz-placeholder {
+  color: #D1E8F7;
+}
+.form_inputs_main_item:-ms-input-placeholder {
+  color: #D1E8F7;
+}
+.form_inputs_main_item::-ms-input-placeholder {
+  color: #D1E8F7;
+}
+.form_inputs_main_item::placeholder {
+  color: #D1E8F7;
+}
+.form_inputs_sup {
+  margin-top: 20px;
+}
+.form_inputs_sup_textarea {
+  width: 100%;
+  height: 176px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  border: none;
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 24px 20px;
+  background: #50A1D2;
+  color: #D1E8F7;
+}
+.form_inputs_sup_textarea::-webkit-input-placeholder {
+  color: #D1E8F7;
+}
+.form_inputs_sup_textarea::-moz-placeholder {
+  color: #D1E8F7;
+}
+.form_inputs_sup_textarea:-ms-input-placeholder {
+  color: #D1E8F7;
+}
+.form_inputs_sup_textarea::-ms-input-placeholder {
+  color: #D1E8F7;
+}
+.form_inputs_sup_textarea::placeholder {
+  color: #D1E8F7;
+}
+.form_submit {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 135px;
+}
+.form_submit_politics_text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+.form_submit_politics_text a {
+  text-decoration: underline;
+}
+.form_submit_compl_button {
+  width: 100%;
+  border: none;
+  display: block;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 60px;
+  padding: 20px;
+  background: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #111;
+}
+
+@media (max-width: 1650px) {
+  .header {
+    height: 900px;
+  }
+  .form_submit {
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form_title_h2 {
+    font-size: 60px;
+    line-height: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .header_h1 {
+    font-size: 60px;
+  }
+  .header_wrapper {
+    padding: 0 0 268px 100px;
+  }
+  .form {
+    padding: 50px;
+  }
+  .form_title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 30px;
+  }
+  .form_title_descr {
+    text-align: left;
+  }
+  .form_inputs {
+    margin-top: 40px;
+  }
+  .form_inputs_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .form_submit {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    background-image: url("/img/bg/mob_bg.png");
+    height: 980px;
+  }
+  .header_wrapper {
+    width: 100%;
+    padding: 0 24px 312px 24px;
+  }
+  .header_h1 {
+    font-size: 32px;
+  }
+  .header_button {
+    margin-top: 44px;
+    width: 100%;
+    padding: 20px;
+  }
+  .form {
+    margin-top: -241px;
+    padding: 0;
+  }
+  .form_container {
+    border-radius: 40px;
+    padding: 32px 24px;
+  }
+  .form_title {
+    gap: 12px;
+  }
+  .form_title_h2 {
+    font-size: 28px;
+    width: 60%;
+  }
+  .form_title_descr {
+    font-size: 18px;
+  }
+  .form_inputs_main {
+    gap: 12px;
+  }
+  .form_inputs_main_item {
+    font-size: 20px;
+  }
+  .form_inputs_sup {
+    margin-top: 12px;
+  }
+  .form_submit {
+    gap: 40px;
+  }
+  .form_submit_politics_text {
+    font-size: 20px;
+  }
+}

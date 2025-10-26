@@ -1,3 +1,61 @@
 .header {
-    
+    height: 1083px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url("/img/bg/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    &_wrapper {
+        padding: 0 0 268px 148px;
+    }
+    &_h1 {
+        font-family: 'Unbounded', sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 110%;
+        color: #fff;
+    }
+    &_button {
+        margin-top: 49px;
+        display: inline-block;
+        border-radius: 60px;
+        padding: 20px 187px 20px 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 109%;
+        text-align: left;
+        color: #1C1C1C;
+        position: relative;
+        background: #fff;
+        transition: all 0.3s ease;
+        &::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 2px;
+        background-color: #252525;
+        top: calc(50% + 1px);
+        right: 28px;
+        transform-origin: left center;
+        transform: rotate(-135deg);
+        }
+        &::after {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 2px;
+        background-color: #252525;
+        top: 50%;
+        right: 28px;
+        transform-origin: left center;
+        transform: rotate(135deg);
+        }
+        &:hover {
+            background: #DCEAF3;
+        }
+        &:active {
+            background: #34FFF1;
+        }
+    }
 }
